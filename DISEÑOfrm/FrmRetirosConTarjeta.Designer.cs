@@ -1,6 +1,6 @@
 ﻿namespace CajeroAutomatico
 {
-    partial class Transferencias
+    partial class FrmRetirosConTarjeta
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             SuspendLayout();
             // 
-            // Transferencias
+            // RetirosConTarjeta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1104, 630);
-            Name = "Transferencias";
-            Text = "Transferencias";
+            ClientSize = new Size(1141, 631);
+            Name = "RetirosConTarjeta";
+            Text = "RetirosConTarjeta";
             ResumeLayout(false);
         }
 

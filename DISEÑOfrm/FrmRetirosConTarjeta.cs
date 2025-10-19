@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico
 {
-    public partial class HistorialDeMovimientos : Form
+    public partial class FrmRetirosConTarjeta : Form
     {
-        public HistorialDeMovimientos()
+        public FrmRetirosConTarjeta()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace CajeroAutomatico
 {
-    partial class HistorialDeMovimientos
+    partial class FrmGestionDeUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             SuspendLayout();
             // 
-            // HistorialDeMovimientos
+            // GestionDeUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1148, 640);
-            Name = "HistorialDeMovimientos";
-            Text = "HistorialDeMovimientos";
+            ClientSize = new Size(1140, 643);
+            Name = "GestionDeUsuario";
+            Text = "GestionDeUsuario";
             ResumeLayout(false);
         }
 
