@@ -1,6 +1,6 @@
 ﻿namespace CajeroAutomatico
 {
-    partial class FormListadoClientes
+    partial class FrmGenerarReporte
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             SuspendLayout();
             // 
-            // FormListadoClientes
+            // FormGenerarReporte
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1148, 671);
-            Name = "FormListadoClientes";
-            Text = "FormListadoClientes";
+            ClientSize = new Size(1113, 660);
+            Name = "FormGenerarReporte";
+            Text = "FormGenerarReporte";
             ResumeLayout(false);
         }
 

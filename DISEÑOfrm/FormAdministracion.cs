@@ -19,7 +19,7 @@ namespace CajeroAutomatico
 
         private void btnManejoClientes_Click(object sender, EventArgs e)
         {
-            FormManejoClientes formManejoClientes = new FormManejoClientes();
+            FrmManejoClientes formManejoClientes = new FrmManejoClientes();
 
             formManejoClientes.Show();
 
@@ -27,7 +27,7 @@ namespace CajeroAutomatico
 
         private void btnListadoClientes_Click(object sender, EventArgs e)
         {
-            FormListadoClientes formListadoClientes = new FormListadoClientes();
+            FrmListadoClientes formListadoClientes = new FrmListadoClientes();
 
             formListadoClientes.Show();
 
@@ -35,7 +35,7 @@ namespace CajeroAutomatico
 
         private void btnGenerarReporte_Click(object sender, EventArgs e)
         {
-            FormGenerarReporte formGenerarReporte = new FormGenerarReporte();
+            FrmGenerarReporte formGenerarReporte = new FrmGenerarReporte();
 
             formGenerarReporte.Show();
         }
