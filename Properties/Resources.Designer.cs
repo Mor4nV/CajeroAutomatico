@@ -63,6 +63,76 @@ namespace CajeroAutomatico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Administracionbtn {
+            get {
+                object obj = ResourceManager.GetObject("Administracionbtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnVolver {
+            get {
+                object obj = ResourceManager.GetObject("btnVolver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ConsultaSaldo {
+            get {
+                object obj = ResourceManager.GetObject("ConsultaSaldo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fondo2 {
+            get {
+                object obj = ResourceManager.GetObject("Fondo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GenerarReporte {
+            get {
+                object obj = ResourceManager.GetObject("GenerarReporte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GestionUsuario {
+            get {
+                object obj = ResourceManager.GetObject("GestionUsuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HistorialMovimientos {
+            get {
+                object obj = ResourceManager.GetObject("HistorialMovimientos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ImagenInicio {
             get {
                 object obj = ResourceManager.GetObject("ImagenInicio", resourceCulture);
@@ -86,6 +156,86 @@ namespace CajeroAutomatico.Properties {
         internal static System.Drawing.Bitmap ImgOperaciones {
             get {
                 object obj = ResourceManager.GetObject("ImgOperaciones", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ManejoClientes {
+            get {
+                object obj = ResourceManager.GetObject("ManejoClientes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Operacionesbtn {
+            get {
+                object obj = ResourceManager.GetObject("Operacionesbtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PersonalAdmintxt {
+            get {
+                object obj = ResourceManager.GetObject("PersonalAdmintxt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RecargarEfectivo {
+            get {
+                object obj = ResourceManager.GetObject("RecargarEfectivo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RetirosTarjeta {
+            get {
+                object obj = ResourceManager.GetObject("RetirosTarjeta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RSinTarjeta {
+            get {
+                object obj = ResourceManager.GetObject("RSinTarjeta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RSinTarjeta1 {
+            get {
+                object obj = ResourceManager.GetObject("RSinTarjeta1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Transferencias {
+            get {
+                object obj = ResourceManager.GetObject("Transferencias", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

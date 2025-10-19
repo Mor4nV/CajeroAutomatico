@@ -16,5 +16,28 @@ namespace CajeroAutomatico
         {
             InitializeComponent();
         }
+
+        private void btnManejoClientes_Click(object sender, EventArgs e)
+        {
+            FormManejoClientes formManejoClientes = new FormManejoClientes();
+
+            formManejoClientes.Show();
+
+        }
+
+        private void btnListadoClientes_Click(object sender, EventArgs e)
+        {
+            FormListadoClientes formListadoClientes = new FormListadoClientes();
+
+            formListadoClientes.Show();
+
+        }
+
+        private void btnGenerarReporte_Click(object sender, EventArgs e)
+        {
+            FormGenerarReporte formGenerarReporte = new FormGenerarReporte();
+
+            formGenerarReporte.Show();
+        }
     }
 }
