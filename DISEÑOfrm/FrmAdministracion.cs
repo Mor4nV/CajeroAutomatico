@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico
 {
-    public partial class FormAdministracion : Form
+    public partial class FrmAdministracion : Form
     {
-        public FormAdministracion()
+        public FrmAdministracion()
         {
             InitializeComponent();
         }

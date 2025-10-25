@@ -1,6 +1,6 @@
 ﻿namespace CajeroAutomatico
 {
-    partial class FormOperaciones
+    partial class FrmOperaciones
     {
         /// <summary>
         /// Required designer variable.

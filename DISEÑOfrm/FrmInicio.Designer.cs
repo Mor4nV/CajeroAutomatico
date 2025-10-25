@@ -60,7 +60,7 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // Form1
+            // FrmInicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -69,7 +69,7 @@
             ClientSize = new Size(1126, 622);
             Controls.Add(button1);
             Controls.Add(btnAdministracion);
-            Name = "Form1";
+            Name = "FrmInicio";
             Text = "Form1";
             ResumeLayout(false);
         }
