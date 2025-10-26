@@ -9,7 +9,7 @@ namespace CajeroAutomatico
 
         private void btnAdministracion_Click(object sender, EventArgs e)
         {
-            FrmAdministracion formAdmin = new FrmAdministracion();
+            FormAdministracion formAdmin = new FormAdministracion();
 
             formAdmin.Show();
 
@@ -17,7 +17,7 @@ namespace CajeroAutomatico
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmLoginPIN formUser = new FrmLoginPIN();
+            FormOperaciones formUser = new FormOperaciones();
 
             formUser.Show();
 

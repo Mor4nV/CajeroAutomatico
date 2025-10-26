@@ -1,6 +1,6 @@
 ﻿namespace CajeroAutomatico
 {
-    partial class FrmAdministracion
+    partial class FormAdministracion
     {
         /// <summary>
         /// Required designer variable.
@@ -84,7 +84,7 @@
             btnManejoClientes.UseVisualStyleBackColor = true;
             btnManejoClientes.Click += btnManejoClientes_Click;
             // 
-            // FrmAdministracion
+            // FormAdministracion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -92,8 +92,7 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1154, 708);
             Controls.Add(grpAdministracion);
-            Name = "FrmAdministracion";
-            StartPosition = FormStartPosition.CenterScreen;
+            Name = "FormAdministracion";
             Text = "FormAdministracion";
             grpAdministracion.ResumeLayout(false);
             ResumeLayout(false);

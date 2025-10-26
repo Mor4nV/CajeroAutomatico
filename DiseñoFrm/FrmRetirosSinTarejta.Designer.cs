@@ -30,13 +30,12 @@
         {
             SuspendLayout();
             // 
-            // FrmRetirosSinTarejta
+            // RetirosSinTarejta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1149, 591);
-            Name = "FrmRetirosSinTarejta";
-            StartPosition = FormStartPosition.CenterParent;
+            Name = "RetirosSinTarejta";
             Text = "RetirosSinTarejta";
             ResumeLayout(false);
         }
