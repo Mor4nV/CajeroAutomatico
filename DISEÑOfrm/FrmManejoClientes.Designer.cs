@@ -247,7 +247,7 @@
             dgvListadoClientes.Name = "dgvListadoClientes";
             dgvListadoClientes.Size = new Size(405, 528);
             dgvListadoClientes.TabIndex = 6;
-            dgvListadoClientes.CellClick += dgvListadoClientes_CellContentClick;
+           // dgvListadoClientes.CellClick += dgvListadoClientes_CellContentClick;
             // 
             // FrmManejoClientes
             // 

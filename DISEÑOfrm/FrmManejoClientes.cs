@@ -48,8 +48,9 @@ namespace CajeroAutomatico
                 string numeroCuenta = txtNumeroCuenta.Text;
                 int estadoCuenta = rbtnActiva.Checked ? 1 : 0;
 
-                bool agregado = manejadorC.AgregarCliente(codigo, nombres, apellidos, numeroCuenta, "", estadoCuenta);
+                //bool agregado = manejadorC.AgregarCliente(codigo, nombres, apellidos, numeroCuenta, "", estadoCuenta);
 
+                /*
                 if (agregado)
                 {
                     MessageBox.Show("Cliente agregado correctamente");
@@ -60,6 +61,8 @@ namespace CajeroAutomatico
                 {
                     MessageBox.Show("Ya existe un cliente con ese código");
                 }
+
+                */
             }
             catch (ArgumentException ex)
             {

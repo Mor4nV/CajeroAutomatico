@@ -30,7 +30,7 @@
         {
             grpValidacion = new GroupBox();
             txtUsuario = new TextBox();
-            this.lblFechaReposicion = new Label();
+            //this.lblFechaReposicion = new Label();
             lblCantidadReposicion = new Label();
             btnContinuar = new Button();
             dateTimePicker1 = new DateTimePicker();
@@ -43,7 +43,7 @@
             grpValidacion.BackgroundImageLayout = ImageLayout.Stretch;
             grpValidacion.Controls.Add(dateTimePicker1);
             grpValidacion.Controls.Add(txtUsuario);
-            grpValidacion.Controls.Add(this.lblFechaReposicion);
+            //grpValidacion.Controls.Add(this.lblFechaReposicion);
             grpValidacion.Controls.Add(lblCantidadReposicion);
             grpValidacion.Controls.Add(btnContinuar);
             grpValidacion.Font = new Font("Impact", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -65,6 +65,7 @@
             // 
             // lblFechaReposicion
             // 
+            /*
             this.lblFechaReposicion.AutoSize = true;
             this.lblFechaReposicion.Location = new Point(30, 121);
             this.lblFechaReposicion.Name = "lblFechaReposicion";
@@ -72,6 +73,7 @@
             this.lblFechaReposicion.TabIndex = 2;
             this.lblFechaReposicion.Text = "Fecha de Reposición";
             this.lblFechaReposicion.UseWaitCursor = true;
+            */
             // 
             // lblCantidadReposicion
             // 

@@ -93,10 +93,7 @@
             ClientSize = new Size(1154, 708);
             Controls.Add(grpAdministracion);
             Name = "FrmAdministracion";
-<<<<<<< HEAD:DISEÑOfrm/FormAdministracion.Designer.cs
             StartPosition = FormStartPosition.CenterScreen;
-=======
->>>>>>> Nose1:DISEÑOfrm/FrmAdministracion.Designer.cs
             Text = "FormAdministracion";
             grpAdministracion.ResumeLayout(false);
             ResumeLayout(false);
