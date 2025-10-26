@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 using CajeroAutomatico.DiseñoFrm;
-=======
 using CajeroAutomatico.DISEÑOfrm;
->>>>>>> Nose1
 
 namespace CajeroAutomatico
 {
