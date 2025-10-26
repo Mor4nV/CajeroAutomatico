@@ -30,12 +30,15 @@
         {
             SuspendLayout();
             // 
-            // RetirosConTarjeta
+            // FrmRetirosConTarjeta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1141, 631);
-            Name = "RetirosConTarjeta";
+            BackgroundImage = Properties.Resources.ConTarjeta;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1160, 749);
+            Name = "FrmRetirosConTarjeta";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RetirosConTarjeta";
             ResumeLayout(false);
         }

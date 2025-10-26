@@ -1,6 +1,6 @@
-﻿namespace CajeroAutomatico
+﻿namespace CajeroAutomatico.DiseñoFrm
 {
-    partial class FrmRetirosSinTarejta
+    partial class FrmConsultaDeSaldo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,38 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRetirosSinTarejta));
-            BtnRegresar = new Button();
             SuspendLayout();
             // 
-            // BtnRegresar
-            // 
-            BtnRegresar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            BtnRegresar.BackgroundImage = (Image)resources.GetObject("BtnRegresar.BackgroundImage");
-            BtnRegresar.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnRegresar.Location = new Point(890, 41);
-            BtnRegresar.Name = "BtnRegresar";
-            BtnRegresar.Size = new Size(163, 133);
-            BtnRegresar.TabIndex = 4;
-            BtnRegresar.UseVisualStyleBackColor = true;
-            BtnRegresar.Click += BtnRegresar_Click;
-            // 
-            // FrmRetirosSinTarejta
+            // FrmConsultaDeSaldo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.SinTarjeta;
+            BackgroundImage = Properties.Resources.Consulta;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1160, 749);
-            Controls.Add(BtnRegresar);
-            Name = "FrmRetirosSinTarejta";
+            Name = "FrmConsultaDeSaldo";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "RetirosSinTarejta";
+            Text = "FrmConsultaDeSaldo";
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button BtnRegresar;
     }
 }
