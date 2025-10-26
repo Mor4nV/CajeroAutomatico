@@ -8,5 +8,7 @@ namespace CajeroAutomatico.Clases
 {
     internal class ClaseRecargarEfectivo
     {
+
+
     }
 }

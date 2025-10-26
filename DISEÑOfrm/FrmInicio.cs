@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 using CajeroAutomatico.DiseñoFrm;
+=======
+using CajeroAutomatico.DISEÑOfrm;
+>>>>>>> Nose1
 
 namespace CajeroAutomatico
 {
@@ -11,9 +15,10 @@ namespace CajeroAutomatico
 
         private void btnAdministracion_Click(object sender, EventArgs e)
         {
-            FormAdministracion formAdmin = new FormAdministracion();
+            FrmValidacionAdmin formAdmin = new FrmValidacionAdmin();
 
             formAdmin.Show();
+            this.Hide();
 
         }
 
