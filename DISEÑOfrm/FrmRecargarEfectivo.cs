@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CajeroAutomatico
+namespace CajeroAutomatico.DISEÑOfrm
 {
-    public partial class FrmListadoClientes : Form
+    public partial class FrmRecargarEfectivo : Form
     {
-        public FrmListadoClientes()
+        public FrmRecargarEfectivo()
         {
             InitializeComponent();
         }

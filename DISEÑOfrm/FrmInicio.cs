@@ -1,3 +1,5 @@
+using CajeroAutomatico.DISEÑOfrm;
+
 namespace CajeroAutomatico
 {
     public partial class FrmInicio : Form
@@ -9,9 +11,10 @@ namespace CajeroAutomatico
 
         private void btnAdministracion_Click(object sender, EventArgs e)
         {
-            FormAdministracion formAdmin = new FormAdministracion();
+            FrmValidacionAdmin formAdmin = new FrmValidacionAdmin();
 
             formAdmin.Show();
+            this.Hide();
 
         }
 

@@ -1,6 +1,6 @@
 ﻿namespace CajeroAutomatico
 {
-    partial class FormAdministracion
+    partial class FrmAdministracion
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             grpAdministracion = new GroupBox();
             btnGenerarReporte = new Button();
-            btnListadoClientes = new Button();
+            btnRecargarEfectivo = new Button();
             btnManejoClientes = new Button();
             grpAdministracion.SuspendLayout();
             SuspendLayout();
@@ -41,7 +41,7 @@
             grpAdministracion.BackgroundImage = Properties.Resources.Fondo2;
             grpAdministracion.BackgroundImageLayout = ImageLayout.Stretch;
             grpAdministracion.Controls.Add(btnGenerarReporte);
-            grpAdministracion.Controls.Add(btnListadoClientes);
+            grpAdministracion.Controls.Add(btnRecargarEfectivo);
             grpAdministracion.Controls.Add(btnManejoClientes);
             grpAdministracion.FlatStyle = FlatStyle.Popup;
             grpAdministracion.ForeColor = SystemColors.ControlText;
@@ -62,16 +62,16 @@
             btnGenerarReporte.UseVisualStyleBackColor = true;
             btnGenerarReporte.Click += btnGenerarReporte_Click;
             // 
-            // btnListadoClientes
+            // btnRecargarEfectivo
             // 
-            btnListadoClientes.BackgroundImage = Properties.Resources.RecargarEfectivo;
-            btnListadoClientes.BackgroundImageLayout = ImageLayout.Stretch;
-            btnListadoClientes.Location = new Point(271, 22);
-            btnListadoClientes.Name = "btnListadoClientes";
-            btnListadoClientes.Size = new Size(245, 227);
-            btnListadoClientes.TabIndex = 1;
-            btnListadoClientes.UseVisualStyleBackColor = true;
-            btnListadoClientes.Click += btnListadoClientes_Click;
+            btnRecargarEfectivo.BackgroundImage = Properties.Resources.RecargarEfectivo;
+            btnRecargarEfectivo.BackgroundImageLayout = ImageLayout.Stretch;
+            btnRecargarEfectivo.Location = new Point(271, 22);
+            btnRecargarEfectivo.Name = "btnRecargarEfectivo";
+            btnRecargarEfectivo.Size = new Size(245, 227);
+            btnRecargarEfectivo.TabIndex = 1;
+            btnRecargarEfectivo.UseVisualStyleBackColor = true;
+            btnRecargarEfectivo.Click += btnListadoClientes_Click;
             // 
             // btnManejoClientes
             // 
@@ -84,7 +84,7 @@
             btnManejoClientes.UseVisualStyleBackColor = true;
             btnManejoClientes.Click += btnManejoClientes_Click;
             // 
-            // FormAdministracion
+            // FrmAdministracion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -92,7 +92,7 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1154, 708);
             Controls.Add(grpAdministracion);
-            Name = "FormAdministracion";
+            Name = "FrmAdministracion";
             Text = "FormAdministracion";
             grpAdministracion.ResumeLayout(false);
             ResumeLayout(false);
@@ -102,7 +102,7 @@
 
         private GroupBox grpAdministracion;
         private Button btnGenerarReporte;
-        private Button btnListadoClientes;
+        private Button btnRecargarEfectivo;
         private Button btnManejoClientes;
     }
 }
