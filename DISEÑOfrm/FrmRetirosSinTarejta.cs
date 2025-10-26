@@ -16,12 +16,5 @@ namespace CajeroAutomatico
         {
             InitializeComponent();
         }
-
-        private void BtnRegresar_Click(object sender, EventArgs e)
-        {
-            FrmOperaciones RegresarMenuOperaciones = new FrmOperaciones();
-            RegresarMenuOperaciones.Show();
-            this.Hide();
-        }
     }
 }

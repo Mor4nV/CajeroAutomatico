@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-using CajeroAutomatico.DiseñoFrm;
-=======
 using CajeroAutomatico.DISEÑOfrm;
->>>>>>> Nose1
 
 namespace CajeroAutomatico
 {
@@ -24,9 +20,10 @@ namespace CajeroAutomatico
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmPIN PIN = new FrmPIN();
-            PIN.Show();
-            this.Hide();
+            FormOperaciones formUser = new FormOperaciones();
+
+            formUser.Show();
+
         }
     }
 }
