@@ -1,6 +1,6 @@
 ﻿namespace CajeroAutomatico
 {
-    partial class FrmTransferencias
+    partial class FrmGenerarReporte
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             SuspendLayout();
             // 
-            // FrmTransferencias
+            // FrmGenerarReporte
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1104, 630);
-            Name = "FrmTransferencias";
+            ClientSize = new Size(1113, 660);
+            Name = "FrmGenerarReporte";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Transferencias";
+            Text = "FormGenerarReporte";
             ResumeLayout(false);
         }
 

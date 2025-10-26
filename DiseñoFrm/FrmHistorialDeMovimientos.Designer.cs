@@ -1,6 +1,6 @@
 ﻿namespace CajeroAutomatico
 {
-    partial class FrmTransferencias
+    partial class FrmHistorialDeMovimientos
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             SuspendLayout();
             // 
-            // FrmTransferencias
+            // FrmHistorialDeMovimientos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1104, 630);
-            Name = "FrmTransferencias";
+            ClientSize = new Size(1148, 640);
+            Name = "FrmHistorialDeMovimientos";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Transferencias";
+            Text = "HistorialDeMovimientos";
             ResumeLayout(false);
         }
 
