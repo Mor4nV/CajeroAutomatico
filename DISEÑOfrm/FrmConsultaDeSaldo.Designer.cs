@@ -1,6 +1,6 @@
 ﻿namespace CajeroAutomatico
 {
-    partial class ConsultaDeSaldo
+    partial class FrmConsultaDeSaldo
     {
         /// <summary>
         /// Required designer variable.

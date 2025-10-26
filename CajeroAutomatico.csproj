@@ -24,8 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Clases\" />
-    <Folder Include="Clases\" />
     <Folder Include="Manejadores\" />
   </ItemGroup>
 
