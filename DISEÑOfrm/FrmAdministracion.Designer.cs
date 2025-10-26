@@ -84,7 +84,7 @@
             btnManejoClientes.UseVisualStyleBackColor = true;
             btnManejoClientes.Click += btnManejoClientes_Click;
             // 
-            // FormAdministracion
+            // FrmAdministracion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -92,7 +92,8 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1154, 708);
             Controls.Add(grpAdministracion);
-            Name = "FormAdministracion";
+            Name = "FrmAdministracion";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormAdministracion";
             grpAdministracion.ResumeLayout(false);
             ResumeLayout(false);

@@ -17,7 +17,7 @@ namespace CajeroAutomatico
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmOperaciones formUser = new FrmOperaciones();
+            FrmLoginPIN formUser = new FrmLoginPIN();
 
             formUser.Show();
 

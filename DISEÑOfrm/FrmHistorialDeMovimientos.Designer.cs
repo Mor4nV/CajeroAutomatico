@@ -30,12 +30,13 @@
         {
             SuspendLayout();
             // 
-            // HistorialDeMovimientos
+            // FrmHistorialDeMovimientos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1148, 640);
-            Name = "HistorialDeMovimientos";
+            Name = "FrmHistorialDeMovimientos";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "HistorialDeMovimientos";
             ResumeLayout(false);
         }

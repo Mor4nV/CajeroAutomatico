@@ -30,12 +30,13 @@
         {
             SuspendLayout();
             // 
-            // ConsultaDeSaldo
+            // FrmConsultaDeSaldo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1155, 632);
-            Name = "ConsultaDeSaldo";
+            Name = "FrmConsultaDeSaldo";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ConsultaDeSaldo";
             ResumeLayout(false);
         }
