@@ -1,4 +1,4 @@
-﻿namespace CajeroAutomatico.DiseñoFrm
+﻿namespace CajeroAutomatico
 {
     partial class FrmConsultaDeSaldo
     {
@@ -30,16 +30,13 @@
         {
             SuspendLayout();
             // 
-            // FrmConsultaDeSaldo
+            // ConsultaDeSaldo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.Consulta;
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1160, 749);
-            Name = "FrmConsultaDeSaldo";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "FrmConsultaDeSaldo";
+            ClientSize = new Size(1155, 632);
+            Name = "ConsultaDeSaldo";
+            Text = "ConsultaDeSaldo";
             ResumeLayout(false);
         }
 

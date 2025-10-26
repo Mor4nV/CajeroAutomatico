@@ -30,15 +30,12 @@
         {
             SuspendLayout();
             // 
-            // FrmGestionDeUsuario
+            // GestionDeUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.Usuarios;
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1160, 749);
-            Name = "FrmGestionDeUsuario";
-            StartPosition = FormStartPosition.CenterScreen;
+            ClientSize = new Size(1140, 643);
+            Name = "GestionDeUsuario";
             Text = "GestionDeUsuario";
             ResumeLayout(false);
         }

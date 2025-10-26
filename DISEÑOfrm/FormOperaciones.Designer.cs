@@ -1,6 +1,6 @@
 ﻿namespace CajeroAutomatico
 {
-    partial class FrmOperaciones
+    partial class FormOperaciones
     {
         /// <summary>
         /// Required designer variable.
@@ -29,18 +29,17 @@
         private void InitializeComponent()
         {
             grpOperaciones = new GroupBox();
-            btnGestionUsuario = new Button();
-            btnHistorialMovimientos = new Button();
-            btnConcultaSaldo = new Button();
             btnTransferencias = new Button();
             btnSinTarjeta = new Button();
             btnRetiros = new Button();
+            btnConcultaSaldo = new Button();
+            btnHistorialMovimientos = new Button();
+            btnGestionUsuario = new Button();
             grpOperaciones.SuspendLayout();
             SuspendLayout();
             // 
             // grpOperaciones
             // 
-            grpOperaciones.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             grpOperaciones.BackColor = SystemColors.ActiveCaption;
             grpOperaciones.BackgroundImage = Properties.Resources.Fondo2;
             grpOperaciones.BackgroundImageLayout = ImageLayout.Stretch;
@@ -58,25 +57,35 @@
             grpOperaciones.TabIndex = 1;
             grpOperaciones.TabStop = false;
             // 
-            // btnGestionUsuario
+            // btnTransferencias
             // 
-            btnGestionUsuario.BackgroundImage = Properties.Resources.GestionUsuario;
-            btnGestionUsuario.BackgroundImageLayout = ImageLayout.Stretch;
-            btnGestionUsuario.Location = new Point(522, 255);
-            btnGestionUsuario.Name = "btnGestionUsuario";
-            btnGestionUsuario.Size = new Size(245, 227);
-            btnGestionUsuario.TabIndex = 7;
-            btnGestionUsuario.UseVisualStyleBackColor = true;
+            btnTransferencias.BackgroundImage = Properties.Resources.Transferencias;
+            btnTransferencias.BackgroundImageLayout = ImageLayout.Stretch;
+            btnTransferencias.Location = new Point(522, 22);
+            btnTransferencias.Name = "btnTransferencias";
+            btnTransferencias.Size = new Size(245, 227);
+            btnTransferencias.TabIndex = 2;
+            btnTransferencias.UseVisualStyleBackColor = true;
             // 
-            // btnHistorialMovimientos
+            // btnSinTarjeta
             // 
-            btnHistorialMovimientos.BackgroundImage = Properties.Resources.HistorialMovimientos;
-            btnHistorialMovimientos.BackgroundImageLayout = ImageLayout.Stretch;
-            btnHistorialMovimientos.Location = new Point(271, 255);
-            btnHistorialMovimientos.Name = "btnHistorialMovimientos";
-            btnHistorialMovimientos.Size = new Size(245, 227);
-            btnHistorialMovimientos.TabIndex = 6;
-            btnHistorialMovimientos.UseVisualStyleBackColor = true;
+            btnSinTarjeta.BackgroundImage = Properties.Resources.RSinTarjeta1;
+            btnSinTarjeta.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSinTarjeta.Location = new Point(271, 22);
+            btnSinTarjeta.Name = "btnSinTarjeta";
+            btnSinTarjeta.Size = new Size(245, 227);
+            btnSinTarjeta.TabIndex = 1;
+            btnSinTarjeta.UseVisualStyleBackColor = true;
+            // 
+            // btnRetiros
+            // 
+            btnRetiros.BackgroundImage = Properties.Resources.RetirosTarjeta;
+            btnRetiros.BackgroundImageLayout = ImageLayout.Stretch;
+            btnRetiros.Location = new Point(20, 22);
+            btnRetiros.Name = "btnRetiros";
+            btnRetiros.Size = new Size(245, 227);
+            btnRetiros.TabIndex = 0;
+            btnRetiros.UseVisualStyleBackColor = true;
             // 
             // btnConcultaSaldo
             // 
@@ -88,49 +97,35 @@
             btnConcultaSaldo.TabIndex = 4;
             btnConcultaSaldo.UseVisualStyleBackColor = true;
             // 
-            // btnTransferencias
+            // btnHistorialMovimientos
             // 
-            btnTransferencias.BackgroundImage = Properties.Resources.Transferencias;
-            btnTransferencias.BackgroundImageLayout = ImageLayout.Stretch;
-            btnTransferencias.Location = new Point(522, 22);
-            btnTransferencias.Name = "btnTransferencias";
-            btnTransferencias.Size = new Size(245, 227);
-            btnTransferencias.TabIndex = 2;
-            btnTransferencias.UseVisualStyleBackColor = true;
-            btnTransferencias.Click += btnTransferencias_Click;
+            btnHistorialMovimientos.BackgroundImage = Properties.Resources.HistorialMovimientos;
+            btnHistorialMovimientos.BackgroundImageLayout = ImageLayout.Stretch;
+            btnHistorialMovimientos.Location = new Point(271, 255);
+            btnHistorialMovimientos.Name = "btnHistorialMovimientos";
+            btnHistorialMovimientos.Size = new Size(245, 227);
+            btnHistorialMovimientos.TabIndex = 6;
+            btnHistorialMovimientos.UseVisualStyleBackColor = true;
             // 
-            // btnSinTarjeta
+            // btnGestionUsuario
             // 
-            btnSinTarjeta.BackgroundImage = Properties.Resources.RSinTarjeta1;
-            btnSinTarjeta.BackgroundImageLayout = ImageLayout.Stretch;
-            btnSinTarjeta.Location = new Point(271, 22);
-            btnSinTarjeta.Name = "btnSinTarjeta";
-            btnSinTarjeta.Size = new Size(245, 227);
-            btnSinTarjeta.TabIndex = 1;
-            btnSinTarjeta.UseVisualStyleBackColor = true;
-            btnSinTarjeta.Click += btnSinTarjeta_Click;
+            btnGestionUsuario.BackgroundImage = Properties.Resources.GestionUsuario;
+            btnGestionUsuario.BackgroundImageLayout = ImageLayout.Stretch;
+            btnGestionUsuario.Location = new Point(522, 255);
+            btnGestionUsuario.Name = "btnGestionUsuario";
+            btnGestionUsuario.Size = new Size(245, 227);
+            btnGestionUsuario.TabIndex = 7;
+            btnGestionUsuario.UseVisualStyleBackColor = true;
             // 
-            // btnRetiros
-            // 
-            btnRetiros.BackgroundImage = Properties.Resources.RetirosTarjeta;
-            btnRetiros.BackgroundImageLayout = ImageLayout.Stretch;
-            btnRetiros.Location = new Point(20, 22);
-            btnRetiros.Name = "btnRetiros";
-            btnRetiros.Size = new Size(245, 227);
-            btnRetiros.TabIndex = 0;
-            btnRetiros.UseVisualStyleBackColor = true;
-            btnRetiros.Click += btnRetiros_Click;
-            // 
-            // FrmOperaciones
+            // FormOperaciones
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.ImgOperaciones;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1160, 749);
+            ClientSize = new Size(1160, 758);
             Controls.Add(grpOperaciones);
-            Name = "FrmOperaciones";
-            StartPosition = FormStartPosition.CenterScreen;
+            Name = "FormOperaciones";
             Text = "FormOperaciones";
             grpOperaciones.ResumeLayout(false);
             ResumeLayout(false);
