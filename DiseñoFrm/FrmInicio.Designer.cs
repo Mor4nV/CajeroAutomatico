@@ -39,7 +39,7 @@
             btnAdministracion.BackgroundImageLayout = ImageLayout.Stretch;
             btnAdministracion.FlatStyle = FlatStyle.Popup;
             btnAdministracion.Font = new Font("MingLiU_MSCS-ExtB", 26.25F, FontStyle.Bold | FontStyle.Italic);
-            btnAdministracion.Location = new Point(304, 266);
+            btnAdministracion.Location = new Point(295, 278);
             btnAdministracion.Name = "btnAdministracion";
             btnAdministracion.Size = new Size(265, 256);
             btnAdministracion.TabIndex = 0;
@@ -53,14 +53,14 @@
             button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("MingLiU_MSCS-ExtB", 26.25F, FontStyle.Bold | FontStyle.Italic);
-            button1.Location = new Point(575, 266);
+            button1.Location = new Point(566, 278);
             button1.Name = "button1";
             button1.Size = new Size(265, 256);
             button1.TabIndex = 1;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // FrmInicio
+            // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -69,8 +69,7 @@
             ClientSize = new Size(1126, 622);
             Controls.Add(button1);
             Controls.Add(btnAdministracion);
-            Name = "FrmInicio";
-            StartPosition = FormStartPosition.CenterScreen;
+            Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
         }
