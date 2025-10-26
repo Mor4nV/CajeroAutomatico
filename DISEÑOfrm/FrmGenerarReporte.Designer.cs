@@ -30,13 +30,12 @@
         {
             SuspendLayout();
             // 
-            // FrmGenerarReporte
+            // FormGenerarReporte
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1113, 660);
-            Name = "FrmGenerarReporte";
-            StartPosition = FormStartPosition.CenterScreen;
+            Name = "FormGenerarReporte";
             Text = "FormGenerarReporte";
             ResumeLayout(false);
         }

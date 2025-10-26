@@ -30,13 +30,12 @@
         {
             SuspendLayout();
             // 
-            // FrmManejoClientes
+            // FormManejoClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1161, 684);
-            Name = "FrmManejoClientes";
-            StartPosition = FormStartPosition.CenterScreen;
+            Name = "FormManejoClientes";
             Text = "FormManejoClientes";
             ResumeLayout(false);
         }
