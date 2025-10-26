@@ -28,18 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRetirosSinTarejta));
+            BtnRegresar = new Button();
             SuspendLayout();
             // 
-            // RetirosSinTarejta
+            // BtnRegresar
+            // 
+            BtnRegresar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            BtnRegresar.BackgroundImage = (Image)resources.GetObject("BtnRegresar.BackgroundImage");
+            BtnRegresar.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnRegresar.Location = new Point(890, 41);
+            BtnRegresar.Name = "BtnRegresar";
+            BtnRegresar.Size = new Size(163, 133);
+            BtnRegresar.TabIndex = 4;
+            BtnRegresar.UseVisualStyleBackColor = true;
+            BtnRegresar.Click += BtnRegresar_Click;
+            // 
+            // FrmRetirosSinTarejta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1149, 591);
-            Name = "RetirosSinTarejta";
+            BackgroundImage = Properties.Resources.SinTarjeta;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1160, 749);
+            Controls.Add(BtnRegresar);
+            Name = "FrmRetirosSinTarejta";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RetirosSinTarejta";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button BtnRegresar;
     }
 }

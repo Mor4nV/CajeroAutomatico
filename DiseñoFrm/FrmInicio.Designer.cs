@@ -34,6 +34,7 @@
             // 
             // btnAdministracion
             // 
+            btnAdministracion.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             btnAdministracion.BackColor = SystemColors.ActiveCaption;
             btnAdministracion.BackgroundImage = Properties.Resources.Administracionbtn;
             btnAdministracion.BackgroundImageLayout = ImageLayout.Stretch;
@@ -48,6 +49,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             button1.BackColor = SystemColors.ActiveCaption;
             button1.BackgroundImage = Properties.Resources.Operacionesbtn;
             button1.BackgroundImageLayout = ImageLayout.Stretch;

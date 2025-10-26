@@ -30,12 +30,15 @@
         {
             SuspendLayout();
             // 
-            // Transferencias
+            // FrmTransferencias
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1104, 630);
-            Name = "Transferencias";
+            BackgroundImage = Properties.Resources.Transferencia;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1160, 749);
+            Name = "FrmTransferencias";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Transferencias";
             ResumeLayout(false);
         }

@@ -1,3 +1,5 @@
+using CajeroAutomatico.DiseñoFrm;
+
 namespace CajeroAutomatico
 {
     public partial class FrmInicio : Form
@@ -17,10 +19,9 @@ namespace CajeroAutomatico
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmOperaciones formUser = new FrmOperaciones();
-
-            formUser.Show();
-
+            FrmPIN PIN = new FrmPIN();
+            PIN.Show();
+            this.Hide();
         }
     }
 }
