@@ -94,6 +94,7 @@
             Controls.Add(TxtNumeroTarjeta);
             Name = "FrmTarjeta";
             Text = "FrmTarjeta";
+            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
             PerformLayout();
         }

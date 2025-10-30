@@ -21,7 +21,7 @@ namespace CajeroAutomatico
         {
             FrmOperaciones RegresarMenuOperaciones = new FrmOperaciones();
             RegresarMenuOperaciones.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void FrmRetirosSinTarejta_Load(object sender, EventArgs e)

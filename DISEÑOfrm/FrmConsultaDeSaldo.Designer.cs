@@ -28,7 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultaDeSaldo));
+            BtnRegresar = new Button();
             SuspendLayout();
+            // 
+            // BtnRegresar
+            // 
+            BtnRegresar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            BtnRegresar.BackgroundImage = (Image)resources.GetObject("BtnRegresar.BackgroundImage");
+            BtnRegresar.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnRegresar.Location = new Point(913, 34);
+            BtnRegresar.Name = "BtnRegresar";
+            BtnRegresar.Size = new Size(130, 126);
+            BtnRegresar.TabIndex = 7;
+            BtnRegresar.UseVisualStyleBackColor = true;
+            BtnRegresar.Click += BtnRegresar_Click;
             // 
             // FrmConsultaDeSaldo
             // 
@@ -37,12 +51,16 @@
             BackgroundImage = Properties.Resources.Consulta;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1160, 749);
+            Controls.Add(BtnRegresar);
             Name = "FrmConsultaDeSaldo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmConsultaDeSaldo";
+            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button BtnRegresar;
     }
 }

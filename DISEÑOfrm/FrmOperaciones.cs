@@ -64,7 +64,29 @@ namespace CajeroAutomatico
         private void BtnRegresar_Click(object sender, EventArgs e)
         {
             FrmInicio RegresaInicio = new FrmInicio();
-            this.Close(); 
+            RegresaInicio.Show();
+            this.Close();
+        }
+
+        private void btnConcultaSaldo_Click_1(object sender, EventArgs e)
+        {
+            FrmConsultaDeSaldo consultaDeSaldo = new FrmConsultaDeSaldo();
+            consultaDeSaldo.Show();
+            this.Close();
+        }
+
+        private void btnHistorialMovimientos_Click_1(object sender, EventArgs e)
+        {
+            FrmHistorialDeMovimientos historial= new FrmHistorialDeMovimientos();
+            historial.Show();
+            this.Close();
+        }
+
+        private void btnGestionUsuario_Click_1(object sender, EventArgs e)
+        {
+            FrmGestionDeUsuario Gestion= new FrmGestionDeUsuario();
+            Gestion.Show();
+            this.Close();
         }
     }
 }

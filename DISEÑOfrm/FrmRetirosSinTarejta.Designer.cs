@@ -73,7 +73,7 @@
             // 
             LblNumero.AutoSize = true;
             LblNumero.Font = new Font("Comic Sans MS", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LblNumero.ForeColor = Color.PaleTurquoise;
+            LblNumero.ForeColor = Color.Azure;
             LblNumero.Location = new Point(588, 282);
             LblNumero.Name = "LblNumero";
             LblNumero.Size = new Size(342, 76);
@@ -85,7 +85,7 @@
             // 
             LblMonto.AutoSize = true;
             LblMonto.Font = new Font("Comic Sans MS", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LblMonto.ForeColor = Color.PaleTurquoise;
+            LblMonto.ForeColor = Color.Azure;
             LblMonto.Location = new Point(608, 380);
             LblMonto.Name = "LblMonto";
             LblMonto.Size = new Size(310, 76);
@@ -116,9 +116,11 @@
             Controls.Add(TxtNumeroCelular);
             Controls.Add(TxtMontoRetiro);
             Controls.Add(BtnRegresar);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmRetirosSinTarejta";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RetirosSinTarejta";
+            WindowState = FormWindowState.Maximized;
             Load += FrmRetirosSinTarejta_Load;
             ResumeLayout(false);
             PerformLayout();
