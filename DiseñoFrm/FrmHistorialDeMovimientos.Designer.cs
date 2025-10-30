@@ -28,7 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHistorialDeMovimientos));
+            BtnRegresar = new Button();
             SuspendLayout();
+            // 
+            // BtnRegresar
+            // 
+            BtnRegresar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            BtnRegresar.BackgroundImage = (Image)resources.GetObject("BtnRegresar.BackgroundImage");
+            BtnRegresar.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnRegresar.Location = new Point(925, 64);
+            BtnRegresar.Name = "BtnRegresar";
+            BtnRegresar.Size = new Size(130, 126);
+            BtnRegresar.TabIndex = 8;
+            BtnRegresar.UseVisualStyleBackColor = true;
+            BtnRegresar.Click += BtnRegresar_Click;
             // 
             // FrmHistorialDeMovimientos
             // 
@@ -37,12 +51,17 @@
             BackgroundImage = Properties.Resources.Historial;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1160, 749);
+            Controls.Add(BtnRegresar);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmHistorialDeMovimientos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "HistorialDeMovimientos";
+            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button BtnRegresar;
     }
 }

@@ -62,6 +62,7 @@
             // 
             // btnGestionUsuario
             // 
+            btnGestionUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             btnGestionUsuario.BackgroundImage = Properties.Resources.GestionUsuario;
             btnGestionUsuario.BackgroundImageLayout = ImageLayout.Stretch;
             btnGestionUsuario.Location = new Point(522, 255);
@@ -69,9 +70,11 @@
             btnGestionUsuario.Size = new Size(245, 227);
             btnGestionUsuario.TabIndex = 7;
             btnGestionUsuario.UseVisualStyleBackColor = true;
+            btnGestionUsuario.Click += btnGestionUsuario_Click_1;
             // 
             // btnHistorialMovimientos
             // 
+            btnHistorialMovimientos.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             btnHistorialMovimientos.BackgroundImage = Properties.Resources.HistorialMovimientos;
             btnHistorialMovimientos.BackgroundImageLayout = ImageLayout.Stretch;
             btnHistorialMovimientos.Location = new Point(271, 255);
@@ -79,9 +82,11 @@
             btnHistorialMovimientos.Size = new Size(245, 227);
             btnHistorialMovimientos.TabIndex = 6;
             btnHistorialMovimientos.UseVisualStyleBackColor = true;
+            btnHistorialMovimientos.Click += btnHistorialMovimientos_Click_1;
             // 
             // btnConcultaSaldo
             // 
+            btnConcultaSaldo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             btnConcultaSaldo.BackgroundImage = Properties.Resources.ConsultaSaldo;
             btnConcultaSaldo.BackgroundImageLayout = ImageLayout.Stretch;
             btnConcultaSaldo.Location = new Point(20, 255);
@@ -89,9 +94,11 @@
             btnConcultaSaldo.Size = new Size(245, 227);
             btnConcultaSaldo.TabIndex = 4;
             btnConcultaSaldo.UseVisualStyleBackColor = true;
+            btnConcultaSaldo.Click += btnConcultaSaldo_Click_1;
             // 
             // btnTransferencias
             // 
+            btnTransferencias.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             btnTransferencias.BackgroundImage = Properties.Resources.Transferencias;
             btnTransferencias.BackgroundImageLayout = ImageLayout.Stretch;
             btnTransferencias.Location = new Point(522, 22);
@@ -103,6 +110,7 @@
             // 
             // btnSinTarjeta
             // 
+            btnSinTarjeta.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             btnSinTarjeta.BackgroundImage = Properties.Resources.RSinTarjeta1;
             btnSinTarjeta.BackgroundImageLayout = ImageLayout.Stretch;
             btnSinTarjeta.Location = new Point(271, 22);
@@ -114,6 +122,7 @@
             // 
             // btnRetiros
             // 
+            btnRetiros.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             btnRetiros.BackgroundImage = Properties.Resources.RetirosTarjeta;
             btnRetiros.BackgroundImageLayout = ImageLayout.Stretch;
             btnRetiros.Location = new Point(20, 22);
@@ -144,9 +153,11 @@
             ClientSize = new Size(1160, 749);
             Controls.Add(BtnRegresar);
             Controls.Add(grpOperaciones);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmOperaciones";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormOperaciones";
+            WindowState = FormWindowState.Maximized;
             grpOperaciones.ResumeLayout(false);
             ResumeLayout(false);
         }

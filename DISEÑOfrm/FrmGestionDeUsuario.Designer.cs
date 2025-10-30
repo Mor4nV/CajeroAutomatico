@@ -28,7 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionDeUsuario));
+            BtnRegresar = new Button();
             SuspendLayout();
+            // 
+            // BtnRegresar
+            // 
+            BtnRegresar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            BtnRegresar.BackgroundImage = (Image)resources.GetObject("BtnRegresar.BackgroundImage");
+            BtnRegresar.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnRegresar.Location = new Point(931, 57);
+            BtnRegresar.Name = "BtnRegresar";
+            BtnRegresar.Size = new Size(130, 126);
+            BtnRegresar.TabIndex = 9;
+            BtnRegresar.UseVisualStyleBackColor = true;
+            BtnRegresar.Click += BtnRegresar_Click;
             // 
             // FrmGestionDeUsuario
             // 
@@ -37,12 +51,17 @@
             BackgroundImage = Properties.Resources.Usuarios;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1160, 749);
+            Controls.Add(BtnRegresar);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmGestionDeUsuario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "GestionDeUsuario";
+            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button BtnRegresar;
     }
 }
