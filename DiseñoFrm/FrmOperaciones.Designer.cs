@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOperaciones));
             grpOperaciones = new GroupBox();
             btnGestionUsuario = new Button();
             btnHistorialMovimientos = new Button();
@@ -35,6 +36,7 @@
             btnTransferencias = new Button();
             btnSinTarjeta = new Button();
             btnRetiros = new Button();
+            BtnRegresar = new Button();
             grpOperaciones.SuspendLayout();
             SuspendLayout();
             // 
@@ -121,6 +123,18 @@
             btnRetiros.UseVisualStyleBackColor = true;
             btnRetiros.Click += btnRetiros_Click;
             // 
+            // BtnRegresar
+            // 
+            BtnRegresar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            BtnRegresar.BackgroundImage = (Image)resources.GetObject("BtnRegresar.BackgroundImage");
+            BtnRegresar.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnRegresar.Location = new Point(977, 602);
+            BtnRegresar.Name = "BtnRegresar";
+            BtnRegresar.Size = new Size(110, 105);
+            BtnRegresar.TabIndex = 4;
+            BtnRegresar.UseVisualStyleBackColor = true;
+            BtnRegresar.Click += BtnRegresar_Click;
+            // 
             // FrmOperaciones
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -128,6 +142,7 @@
             BackgroundImage = Properties.Resources.ImgOperaciones;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1160, 749);
+            Controls.Add(BtnRegresar);
             Controls.Add(grpOperaciones);
             Name = "FrmOperaciones";
             StartPosition = FormStartPosition.CenterScreen;
@@ -145,5 +160,6 @@
         private Button btnTransferencias;
         private Button btnSinTarjeta;
         private Button btnRetiros;
+        private Button BtnRegresar;
     }
 }

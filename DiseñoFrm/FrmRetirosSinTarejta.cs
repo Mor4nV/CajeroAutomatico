@@ -23,5 +23,12 @@ namespace CajeroAutomatico
             RegresarMenuOperaciones.Show();
             this.Hide();
         }
+
+        private void FrmRetirosSinTarejta_Load(object sender, EventArgs e)
+        {
+            LblNumero.BackColor = Color.Transparent;
+            LblMonto.BackColor = Color.Transparent;
+
+        }
     }
 }
