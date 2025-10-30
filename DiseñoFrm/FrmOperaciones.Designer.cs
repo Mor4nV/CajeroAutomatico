@@ -42,7 +42,7 @@
             // 
             // grpOperaciones
             // 
-            grpOperaciones.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            grpOperaciones.Anchor = AnchorStyles.Top;
             grpOperaciones.BackColor = SystemColors.ActiveCaption;
             grpOperaciones.BackgroundImage = Properties.Resources.Fondo2;
             grpOperaciones.BackgroundImageLayout = ImageLayout.Stretch;
@@ -134,7 +134,7 @@
             // 
             // BtnRegresar
             // 
-            BtnRegresar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            BtnRegresar.Anchor = AnchorStyles.Top;
             BtnRegresar.BackgroundImage = (Image)resources.GetObject("BtnRegresar.BackgroundImage");
             BtnRegresar.BackgroundImageLayout = ImageLayout.Stretch;
             BtnRegresar.Location = new Point(977, 602);
