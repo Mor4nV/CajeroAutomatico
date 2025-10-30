@@ -40,7 +40,7 @@
             TxtPIN.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             TxtPIN.Font = new Font("Comic Sans MS", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             TxtPIN.ForeColor = Color.DodgerBlue;
-            TxtPIN.Location = new Point(404, 241);
+            TxtPIN.Location = new Point(408, 261);
             TxtPIN.Name = "TxtPIN";
             TxtPIN.Size = new Size(351, 52);
             TxtPIN.TabIndex = 0;
@@ -48,7 +48,7 @@
             // BtnContinuar
             // 
             BtnContinuar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            BtnContinuar.BackgroundImage = Properties.Resources._2;
+            BtnContinuar.BackgroundImage = (Image)resources.GetObject("BtnContinuar.BackgroundImage");
             BtnContinuar.BackgroundImageLayout = ImageLayout.Stretch;
             BtnContinuar.Location = new Point(308, 355);
             BtnContinuar.Name = "BtnContinuar";

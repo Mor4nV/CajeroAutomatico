@@ -27,7 +27,7 @@ namespace CajeroAutomatico.DiseñoFrm
             {
                 FrmOperaciones Operaciones = new FrmOperaciones();
                 Operaciones.Show();
-                this.Hide();
+                this.Close();
             }
             else
             {
@@ -44,7 +44,7 @@ namespace CajeroAutomatico.DiseñoFrm
         {
             FrmInicio RegresarInicio = new FrmInicio();
             RegresarInicio.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }
