@@ -37,46 +37,46 @@
             // 
             // BtnRegresar
             // 
-            BtnRegresar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            BtnRegresar.Anchor = AnchorStyles.Top;
             BtnRegresar.BackgroundImage = (Image)resources.GetObject("BtnRegresar.BackgroundImage");
             BtnRegresar.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnRegresar.Location = new Point(725, 420);
+            BtnRegresar.Location = new Point(699, 355);
             BtnRegresar.Name = "BtnRegresar";
-            BtnRegresar.Size = new Size(163, 133);
+            BtnRegresar.Size = new Size(163, 161);
             BtnRegresar.TabIndex = 6;
             BtnRegresar.UseVisualStyleBackColor = true;
             BtnRegresar.Click += BtnRegresar_Click;
             // 
             // BtnBorrar
             // 
-            BtnBorrar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            BtnBorrar.Anchor = AnchorStyles.Top;
             BtnBorrar.BackgroundImage = (Image)resources.GetObject("BtnBorrar.BackgroundImage");
             BtnBorrar.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnBorrar.Location = new Point(530, 420);
+            BtnBorrar.Location = new Point(504, 355);
             BtnBorrar.Name = "BtnBorrar";
-            BtnBorrar.Size = new Size(163, 133);
+            BtnBorrar.Size = new Size(163, 161);
             BtnBorrar.TabIndex = 5;
             BtnBorrar.UseVisualStyleBackColor = true;
             BtnBorrar.Click += BtnBorrar_Click;
             // 
             // BtnContinuar
             // 
-            BtnContinuar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            BtnContinuar.Anchor = AnchorStyles.Top;
             BtnContinuar.BackgroundImage = (Image)resources.GetObject("BtnContinuar.BackgroundImage");
             BtnContinuar.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnContinuar.Location = new Point(334, 420);
+            BtnContinuar.Location = new Point(308, 355);
             BtnContinuar.Name = "BtnContinuar";
-            BtnContinuar.Size = new Size(163, 133);
+            BtnContinuar.Size = new Size(163, 161);
             BtnContinuar.TabIndex = 4;
             BtnContinuar.UseVisualStyleBackColor = true;
             BtnContinuar.Click += BtnContinuar_Click;
             // 
             // TxtNumeroTarjeta
             // 
-            TxtNumeroTarjeta.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            TxtNumeroTarjeta.Anchor = AnchorStyles.Top;
             TxtNumeroTarjeta.Font = new Font("Comic Sans MS", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             TxtNumeroTarjeta.ForeColor = Color.DodgerBlue;
-            TxtNumeroTarjeta.Location = new Point(421, 304);
+            TxtNumeroTarjeta.Location = new Point(408, 261);
             TxtNumeroTarjeta.Name = "TxtNumeroTarjeta";
             TxtNumeroTarjeta.Size = new Size(351, 52);
             TxtNumeroTarjeta.TabIndex = 1;
@@ -92,6 +92,7 @@
             Controls.Add(BtnBorrar);
             Controls.Add(BtnContinuar);
             Controls.Add(TxtNumeroTarjeta);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmTarjeta";
             Text = "FrmTarjeta";
             WindowState = FormWindowState.Maximized;

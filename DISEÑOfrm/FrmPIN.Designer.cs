@@ -37,7 +37,7 @@
             // 
             // TxtPIN
             // 
-            TxtPIN.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            TxtPIN.Anchor = AnchorStyles.Top;
             TxtPIN.Font = new Font("Comic Sans MS", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             TxtPIN.ForeColor = Color.DodgerBlue;
             TxtPIN.Location = new Point(408, 261);

@@ -19,7 +19,7 @@ namespace CajeroAutomatico.DISEÑOfrm
 
         private void BtnContinuar_Click(object sender, EventArgs e)
         {
-            FrmRetirosSinTarejta SinTarjeta = new FrmRetirosSinTarejta();
+            FrmTipoCuenta SinTarjeta = new FrmTipoCuenta();
             SinTarjeta.Show();
             this.Close();
         }

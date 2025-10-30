@@ -34,10 +34,10 @@
             // 
             // BtnRegresar
             // 
-            BtnRegresar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            BtnRegresar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnRegresar.BackgroundImage = (Image)resources.GetObject("BtnRegresar.BackgroundImage");
             BtnRegresar.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnRegresar.Location = new Point(925, 64);
+            BtnRegresar.Location = new Point(923, 33);
             BtnRegresar.Name = "BtnRegresar";
             BtnRegresar.Size = new Size(130, 126);
             BtnRegresar.TabIndex = 8;

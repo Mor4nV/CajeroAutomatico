@@ -39,7 +39,7 @@
             // 
             // BtnRegresar
             // 
-            BtnRegresar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            BtnRegresar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnRegresar.BackgroundImage = (Image)resources.GetObject("BtnRegresar.BackgroundImage");
             BtnRegresar.BackgroundImageLayout = ImageLayout.Stretch;
             BtnRegresar.Location = new Point(923, 33);
@@ -71,6 +71,7 @@
             // 
             // LblNumero
             // 
+            LblNumero.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             LblNumero.AutoSize = true;
             LblNumero.Font = new Font("Comic Sans MS", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LblNumero.ForeColor = Color.Azure;
@@ -83,6 +84,7 @@
             // 
             // LblMonto
             // 
+            LblMonto.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             LblMonto.AutoSize = true;
             LblMonto.Font = new Font("Comic Sans MS", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LblMonto.ForeColor = Color.Azure;
@@ -95,6 +97,7 @@
             // 
             // BtnContinuar
             // 
+            BtnContinuar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             BtnContinuar.BackgroundImage = (Image)resources.GetObject("BtnContinuar.BackgroundImage");
             BtnContinuar.BackgroundImageLayout = ImageLayout.Stretch;
             BtnContinuar.Location = new Point(456, 497);
