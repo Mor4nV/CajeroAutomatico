@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CajeroAutomatico.DISEÑOfrm;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico
 {
-    public partial class FormAdministracion : Form
+    public partial class FrmAdministracion : Form
     {
-        public FormAdministracion()
+        public FrmAdministracion()
         {
             InitializeComponent();
         }
@@ -22,14 +23,16 @@ namespace CajeroAutomatico
             FrmManejoClientes formManejoClientes = new FrmManejoClientes();
 
             formManejoClientes.Show();
+            this.Hide();
 
         }
 
         private void btnListadoClientes_Click(object sender, EventArgs e)
         {
-            FrmListadoClientes formListadoClientes = new FrmListadoClientes();
+            FrmRecargarEfectivo formListadoClientes = new FrmRecargarEfectivo();
 
             formListadoClientes.Show();
+            this.Hide();
 
         }
 
@@ -38,6 +41,7 @@ namespace CajeroAutomatico
             FrmGenerarReporte formGenerarReporte = new FrmGenerarReporte();
 
             formGenerarReporte.Show();
+            this.Hide();
         }
     }
 }

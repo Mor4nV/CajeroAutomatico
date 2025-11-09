@@ -103,6 +103,26 @@ namespace CajeroAutomatico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _61 {
+            get {
+                object obj = ResourceManager.GetObject("61", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7 {
+            get {
+                object obj = ResourceManager.GetObject("7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Administracionbtn {
             get {
                 object obj = ResourceManager.GetObject("Administracionbtn", resourceCulture);
@@ -216,6 +236,16 @@ namespace CajeroAutomatico.Properties {
         internal static System.Drawing.Bitmap HistorialMovimientos {
             get {
                 object obj = ResourceManager.GetObject("HistorialMovimientos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagen_animada_Hasta_luego_08 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen-animada-Hasta-luego-08", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CajeroAutomatico.Clases
+namespace CajeroAutomatico.Manejadores
 {
-    internal class ClaseGenerarReporte
+    internal class ManejadorTransacciones
     {
-
-    } 
-
-
+    }
 }
-

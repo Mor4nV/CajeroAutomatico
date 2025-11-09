@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CajeroAutomatico.Manejadores;
 using CajeroAutomatico.Clases;
+using System.IO;
 
 namespace CajeroAutomatico
 {
-    //POSIBLEMENTE TAMBIEN LO HAGAMOS CON BASE DE DATOS MAS ADELANTE.
     public partial class FrmManejoClientes : Form
     {
         private ManejadorManejoClientes manejadorC = new ManejadorManejoClientes();
         public FrmManejoClientes()
         {
             InitializeComponent();
-            GuardarClientesGrid();
+            manejadorC = new ManejadorManejoClientes();
         }
 
         private void txtID_TextChanged(object sender, EventArgs e)
@@ -29,45 +29,60 @@ namespace CajeroAutomatico
 
         private void FrmManejoClientes_Load(object sender, EventArgs e)
         {
+            dgvListadoClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvListadoClientes.MultiSelect = false;
+            CargarListadoClientes();
+
+
 
         }
-        private void GuardarClientesGrid()
+        private void CargarListadoClientes()
         {
-            List<ClaseManejoClientes> listaClientes = manejadorC.ObtenerClientes();
+            var clientes = manejadorC.ObtenerClientes();
+            if (clientes == null || clientes.Count == 0)
+            {
+                dgvListadoClientes.DataSource = null;
+                return;
+            }
             dgvListadoClientes.DataSource = null;
-            dgvListadoClientes.DataSource = listaClientes;
+            dgvListadoClientes.DataSource = clientes;
+            FormatearDGV();
+
+        }
+        private void FormatearDGV()
+        {
+            dgvListadoClientes.Columns["Codigo"].HeaderText = "ID Cliente";
+            dgvListadoClientes.Columns["Nombre"].HeaderText = "Nombres";
+            dgvListadoClientes.Columns["Apellido"].HeaderText = "Apellidos";
+            dgvListadoClientes.Columns["NumeroCuenta"].HeaderText = "Número de Cuenta";
+            dgvListadoClientes.Columns["Estado"].HeaderText = "Estado";
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             try
             {
-                string codigo = txtID.Text;
-                string nombres = txtNombres.Text;
-                string apellidos = txtApellidos.Text;
-                string numeroCuenta = txtNumeroCuenta.Text;
-                int estadoCuenta = rbtnActiva.Checked ? 1 : 0;
-
-                //bool agregado = manejadorC.AgregarCliente(codigo, nombres, apellidos, numeroCuenta, "", estadoCuenta);
-
-                /*
+                int estado = rbtnActiva.Checked ? 1 : 0;
+                bool agregado = manejadorC.AgregarCliente(txtID.Text.Trim(), txtNombres.Text.Trim(),
+                    txtApellidos.Text.Trim(), txtNumeroCuenta.Text.Trim(), estado);
                 if (agregado)
                 {
-                    MessageBox.Show("Cliente agregado correctamente");
-                    GuardarClientesGrid();
-                    LimpiarTextos();
+                    MessageBox.Show("Cliente agregado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 }
                 else
                 {
-                    MessageBox.Show("Ya existe un cliente con ese código");
-                }
+                    MessageBox.Show("El cliente con el ID proporcionado ya existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                */
+                }
+                CargarListadoClientes();
+                LimpiarTextos();
             }
-            catch (ArgumentException ex)
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error al agregar el cliente: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void LimpiarTextos()
@@ -81,71 +96,134 @@ namespace CajeroAutomatico
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            string buscarCodigo = txtID.Text;
-            var cliente = manejadorC.BuscarCliente(buscarCodigo);
-
-            if (cliente != null)
+            try
             {
-                txtNombres.Text = cliente.Nombre;
-                txtApellidos.Text = cliente.Apellido;
-                txtNumeroCuenta.Text = cliente.NumeroCuenta;
-                if (cliente.Estado == 1)
+                var cliente = manejadorC.BuscarCliente(txtID.Text.Trim());
+                if (cliente != null)
                 {
-                    rbtnActiva.Checked = true;
+                    txtNombres.Text = cliente.Nombre;
+                    txtApellidos.Text = cliente.Apellido;
+                    txtNumeroCuenta.Text = cliente.NumeroCuenta;
+                    rbtnActiva.Checked = cliente.Estado == 1;
+                    rbtnInactiva.Checked = cliente.Estado == 0;
                 }
                 else
                 {
-                    rbtnInactiva.Checked = true;
+                    MessageBox.Show("Cliente no encontrado.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Cliente no encontrado");
+                MessageBox.Show("Error al buscar el cliente: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            string codigoEliminar = txtID.Text;
-            bool eliminado = manejadorC.EliminarCliente(codigoEliminar);
-            if (eliminado)
+            try
             {
-                MessageBox.Show("Cliente eliminado correctamente");
-                GuardarClientesGrid();
+                bool eliminado = manejadorC.EliminarCliente(txtID.Text.Trim());
+                if (eliminado)
+                {
+                    MessageBox.Show("Cliente eliminado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo eliminar el cliente. Verifique que el ID exista.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                CargarListadoClientes();
                 LimpiarTextos();
+
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Cliente no encontrado");
+                MessageBox.Show("Error al eliminar el cliente: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
 
         }
 
         private void btnRefrescar_Click(object sender, EventArgs e)
         {
-            GuardarClientesGrid();
+            manejadorC.RefrescarListado();
+            CargarListadoClientes();
+            MessageBox.Show("Listado de clientes actualizado.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
 
         }
 
-        private void dgvListadoClientes_CellCClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvListadoClientes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            if (e.RowIndex < 0 || e.RowIndex >= dgvListadoClientes.Rows.Count)
+                return;
+
+
+            DataGridViewRow fila = dgvListadoClientes.Rows[e.RowIndex];
+            txtID.Text = fila.Cells["Codigo"].Value.ToString();
+            txtNombres.Text = fila.Cells["Nombre"].Value.ToString();
+            txtApellidos.Text = fila.Cells["Apellido"].Value.ToString();
+            txtNumeroCuenta.Text = fila.Cells["NumeroCuenta"].Value.ToString();
+            int estado = Convert.ToInt32(fila.Cells["Estado"].Value);
+            if (estado == 1)
             {
-                DataGridViewRow fila = dgvListadoClientes.Rows[e.RowIndex];
-                txtID.Text = fila.Cells["Codigo"].Value.ToString();
-                txtNombres.Text = fila.Cells["Nombres"].Value.ToString();
-                txtApellidos.Text = fila.Cells["Apellidos"].Value.ToString();
-                txtNumeroCuenta.Text = fila.Cells["Numero de Cuenta"].Value.ToString();
-                int estado = Convert.ToInt32(fila.Cells["Estado de Cuenta"].Value);
-                if (estado == 1)
+                rbtnActiva.Checked = true;
+            }
+            else
+            {
+                rbtnInactiva.Checked = true;
+            }
+
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int estado = rbtnActiva.Checked ? 1 : 0;
+                bool actualizado = manejadorC.ActualizarCliente(txtID.Text.Trim(), txtNombres.Text.Trim(),
+                    txtApellidos.Text.Trim(), txtNumeroCuenta.Text.Trim(), estado);
+                if (actualizado)
                 {
-                    rbtnActiva.Checked = true;
+                    MessageBox.Show("Cliente actualizado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    rbtnInactiva.Checked = true;
+                    MessageBox.Show("No se pudo actualizar el cliente. Verifique que el ID exista.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                CargarListadoClientes();
+                LimpiarTextos();
+
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar el cliente: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnMostrarClientes_Click(object sender, EventArgs e)
+        {
+            dgvListadoClientes.DataSource = null;
+            dgvListadoClientes.DataSource = manejadorC.ObtenerClientes();
+            FormatearDGV();
+
+
+        }
+
+        private void btnMostrarInactivos_Click(object sender, EventArgs e)
+        {
+            dgvListadoClientes.DataSource = null;
+            dgvListadoClientes.DataSource = manejadorC.ObtenerClientesInactivos();
+            FormatearDGV();
+
+        }
+
+        private void btnMostrarActivos_Click(object sender, EventArgs e)
+        {
+            dgvListadoClientes.DataSource = null;
+            dgvListadoClientes.DataSource = manejadorC.ObtenerClientesActivos();
+            FormatearDGV();
+
         }
     }
 }

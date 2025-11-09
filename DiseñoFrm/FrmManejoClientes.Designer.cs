@@ -41,6 +41,10 @@
             lblNombres = new Label();
             lblID = new Label();
             groupBox3 = new GroupBox();
+            btnActualizar = new Button();
+            btnMostrarClientes = new Button();
+            btnMostrarActivos = new Button();
+            btnMostrarInactivos = new Button();
             btnRefrescar = new Button();
             btnEliminar = new Button();
             btnAgregar = new Button();
@@ -187,6 +191,10 @@
             // groupBox3
             // 
             groupBox3.BackgroundImage = Properties.Resources.Fondo2;
+            groupBox3.Controls.Add(btnActualizar);
+            groupBox3.Controls.Add(btnMostrarClientes);
+            groupBox3.Controls.Add(btnMostrarActivos);
+            groupBox3.Controls.Add(btnMostrarInactivos);
             groupBox3.Controls.Add(btnRefrescar);
             groupBox3.Controls.Add(btnEliminar);
             groupBox3.Controls.Add(btnAgregar);
@@ -199,11 +207,51 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Mantenimiento";
             // 
+            // btnActualizar
+            // 
+            btnActualizar.Location = new Point(307, 30);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(118, 34);
+            btnActualizar.TabIndex = 19;
+            btnActualizar.Text = "Actualizar";
+            btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
+            // 
+            // btnMostrarClientes
+            // 
+            btnMostrarClientes.Location = new Point(6, 114);
+            btnMostrarClientes.Name = "btnMostrarClientes";
+            btnMostrarClientes.Size = new Size(214, 34);
+            btnMostrarClientes.TabIndex = 18;
+            btnMostrarClientes.Text = "Mostrar Clientes";
+            btnMostrarClientes.UseVisualStyleBackColor = true;
+            btnMostrarClientes.Click += btnMostrarClientes_Click;
+            // 
+            // btnMostrarActivos
+            // 
+            btnMostrarActivos.Location = new Point(495, 115);
+            btnMostrarActivos.Name = "btnMostrarActivos";
+            btnMostrarActivos.Size = new Size(224, 34);
+            btnMostrarActivos.TabIndex = 17;
+            btnMostrarActivos.Text = "Mostrar Clientes Activos";
+            btnMostrarActivos.UseVisualStyleBackColor = true;
+            btnMostrarActivos.Click += btnMostrarActivos_Click;
+            // 
+            // btnMostrarInactivos
+            // 
+            btnMostrarInactivos.Location = new Point(241, 115);
+            btnMostrarInactivos.Name = "btnMostrarInactivos";
+            btnMostrarInactivos.Size = new Size(238, 33);
+            btnMostrarInactivos.TabIndex = 16;
+            btnMostrarInactivos.Text = "Mostrar Clientes Inactivos";
+            btnMostrarInactivos.UseVisualStyleBackColor = true;
+            btnMostrarInactivos.Click += btnMostrarInactivos_Click;
+            // 
             // btnRefrescar
             // 
-            btnRefrescar.Location = new Point(473, 65);
+            btnRefrescar.Location = new Point(455, 30);
             btnRefrescar.Name = "btnRefrescar";
-            btnRefrescar.Size = new Size(103, 34);
+            btnRefrescar.Size = new Size(118, 34);
             btnRefrescar.TabIndex = 15;
             btnRefrescar.Text = "Refrescar";
             btnRefrescar.UseVisualStyleBackColor = true;
@@ -211,9 +259,9 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(326, 65);
+            btnEliminar.Location = new Point(601, 30);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(103, 34);
+            btnEliminar.Size = new Size(118, 34);
             btnEliminar.TabIndex = 14;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -221,9 +269,9 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(31, 65);
+            btnAgregar.Location = new Point(16, 30);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(103, 34);
+            btnAgregar.Size = new Size(118, 34);
             btnAgregar.TabIndex = 13;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -231,9 +279,9 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(175, 65);
+            btnBuscar.Location = new Point(160, 30);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(103, 34);
+            btnBuscar.Size = new Size(118, 34);
             btnBuscar.TabIndex = 12;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
@@ -243,11 +291,10 @@
             // 
             dgvListadoClientes.BackgroundColor = SystemColors.ActiveCaption;
             dgvListadoClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvListadoClientes.Location = new Point(846, 305);
+            dgvListadoClientes.Location = new Point(810, 305);
             dgvListadoClientes.Name = "dgvListadoClientes";
-            dgvListadoClientes.Size = new Size(405, 528);
+            dgvListadoClientes.Size = new Size(441, 528);
             dgvListadoClientes.TabIndex = 6;
-           // dgvListadoClientes.CellClick += dgvListadoClientes_CellContentClick;
             // 
             // FrmManejoClientes
             // 
@@ -291,5 +338,9 @@
         private Button btnAgregar;
         private Button btnBuscar;
         private DataGridView dgvListadoClientes;
+        private Button btnMostrarActivos;
+        private Button btnMostrarInactivos;
+        private Button btnMostrarClientes;
+        private Button btnActualizar;
     }
 }

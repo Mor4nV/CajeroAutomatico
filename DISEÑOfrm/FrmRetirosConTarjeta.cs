@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CajeroAutomatico.DISEÑOfrm;
 
 namespace CajeroAutomatico
 {
@@ -22,6 +23,36 @@ namespace CajeroAutomatico
             FrmOperaciones RegresarMenuOperaciones = new FrmOperaciones();
             RegresarMenuOperaciones.Show();
             this.Close();
+        }
+
+        private void Btn100_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Btn200_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn300_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn500_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn1000_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnMontoVariable_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
