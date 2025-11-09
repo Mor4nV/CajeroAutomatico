@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CajeroAutomatico.Clases
 {
-    internal class ClaseTransferencias
+    internal class ClaseTransacciones
     {
         //Atributos
         public string StgCuentaOrigen;
@@ -14,7 +14,7 @@ namespace CajeroAutomatico.Clases
         public decimal DecMontoTransferencia;
 
         //Constructor
-        public ClaseTransferencias(string DeCuenta, string ParaCuenta, decimal Monto)
+        public ClaseTransacciones(string DeCuenta, string ParaCuenta, decimal Monto)
         {
             StgCuentaOrigen = DeCuenta;
             StgCuentaDestino = ParaCuenta;

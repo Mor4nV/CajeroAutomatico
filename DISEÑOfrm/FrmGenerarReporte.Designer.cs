@@ -28,35 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnAdministracion = new Button();
-            button1 = new Button();
+            btnReporteClientes = new Button();
+            btnReporteReposicion = new Button();
             SuspendLayout();
             // 
-            // btnAdministracion
+            // btnReporteClientes
             // 
-            btnAdministracion.BackColor = SystemColors.ActiveCaption;
-            btnAdministracion.BackgroundImage = Properties.Resources.ImprimirNuevoReport;
-            btnAdministracion.BackgroundImageLayout = ImageLayout.Stretch;
-            btnAdministracion.FlatStyle = FlatStyle.Popup;
-            btnAdministracion.Font = new Font("MingLiU_MSCS-ExtB", 26.25F, FontStyle.Bold | FontStyle.Italic);
-            btnAdministracion.Location = new Point(610, 302);
-            btnAdministracion.Name = "btnAdministracion";
-            btnAdministracion.Size = new Size(265, 256);
-            btnAdministracion.TabIndex = 1;
-            btnAdministracion.UseVisualStyleBackColor = false;
+            btnReporteClientes.BackColor = SystemColors.ActiveCaption;
+            btnReporteClientes.BackgroundImage = Properties.Resources._7;
+            btnReporteClientes.BackgroundImageLayout = ImageLayout.Stretch;
+            btnReporteClientes.FlatStyle = FlatStyle.Popup;
+            btnReporteClientes.Font = new Font("MingLiU_MSCS-ExtB", 26.25F, FontStyle.Bold | FontStyle.Italic);
+            btnReporteClientes.Location = new Point(610, 302);
+            btnReporteClientes.Name = "btnReporteClientes";
+            btnReporteClientes.Size = new Size(265, 256);
+            btnReporteClientes.TabIndex = 1;
+            btnReporteClientes.UseVisualStyleBackColor = false;
+            btnReporteClientes.Click += btnReporteClientes_Click;
             // 
-            // button1
+            // btnReporteReposicion
             // 
-            button1.BackColor = SystemColors.ActiveCaption;
-            button1.BackgroundImage = Properties.Resources.ImprimirUltimoReport;
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("MingLiU_MSCS-ExtB", 26.25F, FontStyle.Bold | FontStyle.Italic);
-            button1.Location = new Point(321, 302);
-            button1.Name = "button1";
-            button1.Size = new Size(265, 256);
-            button1.TabIndex = 2;
-            button1.UseVisualStyleBackColor = false;
+            btnReporteReposicion.BackColor = SystemColors.ActiveCaption;
+            btnReporteReposicion.BackgroundImage = Properties.Resources._61;
+            btnReporteReposicion.BackgroundImageLayout = ImageLayout.Stretch;
+            btnReporteReposicion.FlatStyle = FlatStyle.Popup;
+            btnReporteReposicion.Font = new Font("MingLiU_MSCS-ExtB", 26.25F, FontStyle.Bold | FontStyle.Italic);
+            btnReporteReposicion.Location = new Point(321, 302);
+            btnReporteReposicion.Name = "btnReporteReposicion";
+            btnReporteReposicion.Size = new Size(265, 256);
+            btnReporteReposicion.TabIndex = 2;
+            btnReporteReposicion.UseVisualStyleBackColor = false;
+            btnReporteReposicion.Click += button1_Click;
             // 
             // FrmGenerarReporte
             // 
@@ -65,8 +67,8 @@
             BackgroundImage = Properties.Resources.GenerarReportefondo;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1218, 737);
-            Controls.Add(button1);
-            Controls.Add(btnAdministracion);
+            Controls.Add(btnReporteReposicion);
+            Controls.Add(btnReporteClientes);
             Name = "FrmGenerarReporte";
             Text = "FormGenerarReporte";
             ResumeLayout(false);
@@ -74,7 +76,7 @@
 
         #endregion
 
-        private Button btnAdministracion;
-        private Button button1;
+        private Button btnReporteClientes;
+        private Button btnReporteReposicion;
     }
 }

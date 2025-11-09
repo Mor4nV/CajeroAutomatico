@@ -22,6 +22,7 @@ namespace CajeroAutomatico.Clases
         public int Estado { get { return intEstado; } }
 
         // Constructor
+ 
         public ClaseManejoClientes(string _codigo, string _nombre, string _apellido, string _cuenta, int _estado)
         {
             this.strCodigo = _codigo;
@@ -38,6 +39,15 @@ namespace CajeroAutomatico.Clases
             this.strApellido = nuevoApellido;
             this.strNumeroCuenta = nuevaCuenta;
             this.intEstado = nuevoEstado;
+        }
+        public override string ToString()
+        {
+            return $"Código: {strCodigo}| Nombre: {strNombre}| Apellido: {strApellido}| Cuenta: {strNumeroCuenta}| Estado: {intEstado}";
+        }
+
+        public string ToFileString()
+        {
+            return $"{strCodigo}|{strNombre}|{strApellido}|{strNumeroCuenta}|{intEstado}";
         }
     }
 }

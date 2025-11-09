@@ -61,6 +61,7 @@
             Btn100.Size = new Size(248, 117);
             Btn100.TabIndex = 6;
             Btn100.UseVisualStyleBackColor = true;
+            Btn100.Click += Btn100_Click;
             // 
             // Btn200
             // 
@@ -72,6 +73,7 @@
             Btn200.Size = new Size(248, 117);
             Btn200.TabIndex = 7;
             Btn200.UseVisualStyleBackColor = true;
+            Btn200.Click += Btn200_Click;
             // 
             // Btn300
             // 
@@ -83,6 +85,7 @@
             Btn300.Size = new Size(248, 117);
             Btn300.TabIndex = 8;
             Btn300.UseVisualStyleBackColor = true;
+            Btn300.Click += Btn300_Click;
             // 
             // BtnMontoVariable
             // 
@@ -94,6 +97,7 @@
             BtnMontoVariable.Size = new Size(248, 117);
             BtnMontoVariable.TabIndex = 11;
             BtnMontoVariable.UseVisualStyleBackColor = true;
+            BtnMontoVariable.Click += BtnMontoVariable_Click;
             // 
             // Btn1000
             // 
@@ -105,6 +109,7 @@
             Btn1000.Size = new Size(248, 117);
             Btn1000.TabIndex = 10;
             Btn1000.UseVisualStyleBackColor = true;
+            Btn1000.Click += Btn1000_Click;
             // 
             // Btn500
             // 
@@ -116,6 +121,7 @@
             Btn500.Size = new Size(248, 117);
             Btn500.TabIndex = 9;
             Btn500.UseVisualStyleBackColor = true;
+            Btn500.Click += Btn500_Click;
             // 
             // FrmRetirosConTarjeta
             // 

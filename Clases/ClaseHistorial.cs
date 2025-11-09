@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace CajeroAutomatico.Clases
 {
-    internal class ClaseHistorialMovimientos
+    internal class ClaseHistorial
     {
         //Atributos
         public List<string> LstMovimientos;
         //Constructor
-        public ClaseHistorialMovimientos()
+        public ClaseHistorial()
         {
             LstMovimientos = new List<string>();
         }
