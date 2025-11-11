@@ -1,4 +1,5 @@
-﻿using CajeroAutomatico.DISEÑOfrm;
+﻿using CajeroAutomatico.DiseñoFrm;
+using CajeroAutomatico.DISEÑOfrm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,9 +30,8 @@ namespace CajeroAutomatico
 
         private void btnListadoClientes_Click(object sender, EventArgs e)
         {
-            FrmRecargarEfectivo formListadoClientes = new FrmRecargarEfectivo();
-
-            formListadoClientes.Show();
+           FrmRecargarEfectivo frmRecargarEfectivo = new FrmRecargarEfectivo();
+            frmRecargarEfectivo.Show();
             this.Hide();
 
         }
