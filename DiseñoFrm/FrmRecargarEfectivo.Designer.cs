@@ -28,12 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FrmRecargarEfectivo";
+            grpRecargarEfectivo = new GroupBox();
+            SuspendLayout();
+            // 
+            // grpRecargarEfectivo
+            // 
+            grpRecargarEfectivo.Location = new Point(175, 140);
+            grpRecargarEfectivo.Name = "grpRecargarEfectivo";
+            grpRecargarEfectivo.Size = new Size(403, 184);
+            grpRecargarEfectivo.TabIndex = 0;
+            grpRecargarEfectivo.TabStop = false;
+            grpRecargarEfectivo.Text = "Reposición de Efectivo";
+            // 
+            // FrmRecargarEfectivo
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(grpRecargarEfectivo);
+            Name = "FrmRecargarEfectivo";
+            Text = "FrmRecargarEfectivo";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private GroupBox grpRecargarEfectivo;
     }
 }
