@@ -133,6 +133,46 @@ namespace CajeroAutomatico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnCerrar {
+            get {
+                object obj = ResourceManager.GetObject("btnCerrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnCreacionUsuarios {
+            get {
+                object obj = ResourceManager.GetObject("btnCreacionUsuarios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnCreacionUsuarios1 {
+            get {
+                object obj = ResourceManager.GetObject("btnCreacionUsuarios1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnGestionCuentas {
+            get {
+                object obj = ResourceManager.GetObject("btnGestionCuentas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnVolver {
             get {
                 object obj = ResourceManager.GetObject("btnVolver", resourceCulture);
@@ -186,6 +226,26 @@ namespace CajeroAutomatico.Properties {
         internal static System.Drawing.Bitmap Fondo21 {
             get {
                 object obj = ResourceManager.GetObject("Fondo21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FondoCreacionUsuarios {
+            get {
+                object obj = ResourceManager.GetObject("FondoCreacionUsuarios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FondoGestionCuentasBanc {
+            get {
+                object obj = ResourceManager.GetObject("FondoGestionCuentasBanc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

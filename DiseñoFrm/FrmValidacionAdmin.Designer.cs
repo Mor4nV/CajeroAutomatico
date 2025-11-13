@@ -1,4 +1,4 @@
-﻿namespace CajeroAutomatico.DISEÑOfrm
+﻿namespace CajeroAutomatico.DiseñoFrm
 {
     partial class FrmValidacionAdmin
     {
@@ -28,64 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnVolver = new Button();
             grpValidacion = new GroupBox();
-            txtContraseña = new TextBox();
+            txtPIN = new TextBox();
             txtUsuario = new TextBox();
-            lblContraseña = new Label();
+            lblPIN = new Label();
             lblUsuario = new Label();
             btnVerificacion = new Button();
+            btnCerrar = new Button();
             grpValidacion.SuspendLayout();
             SuspendLayout();
             // 
+            // btnVolver
+            // 
+            btnVolver.BackgroundImage = Properties.Resources.btnVolver;
+            btnVolver.BackgroundImageLayout = ImageLayout.Stretch;
+            btnVolver.Location = new Point(-40, -80);
+            btnVolver.Name = "btnVolver";
+            btnVolver.Size = new Size(81, 78);
+            btnVolver.TabIndex = 10;
+            btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.UseWaitCursor = true;
+            // 
             // grpValidacion
             // 
+            grpValidacion.Anchor = AnchorStyles.None;
             grpValidacion.BackgroundImage = Properties.Resources.Fondo2;
             grpValidacion.BackgroundImageLayout = ImageLayout.Stretch;
-            grpValidacion.Controls.Add(txtContraseña);
+            grpValidacion.Controls.Add(txtPIN);
             grpValidacion.Controls.Add(txtUsuario);
-            grpValidacion.Controls.Add(lblContraseña);
+            grpValidacion.Controls.Add(lblPIN);
             grpValidacion.Controls.Add(lblUsuario);
             grpValidacion.Controls.Add(btnVerificacion);
             grpValidacion.Font = new Font("Impact", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grpValidacion.Location = new Point(317, 270);
+            grpValidacion.Location = new Point(328, 277);
             grpValidacion.Name = "grpValidacion";
-            grpValidacion.Size = new Size(537, 293);
-            grpValidacion.TabIndex = 1;
+            grpValidacion.Size = new Size(607, 335);
+            grpValidacion.TabIndex = 9;
             grpValidacion.TabStop = false;
             grpValidacion.Text = "Validación";
             grpValidacion.UseWaitCursor = true;
-            grpValidacion.Enter += grpValidacion_Enter;
             // 
-            // txtContraseña
+            // txtPIN
             // 
-            txtContraseña.Location = new Point(184, 113);
-            txtContraseña.Name = "txtContraseña";
-            txtContraseña.Size = new Size(325, 31);
-            txtContraseña.TabIndex = 4;
-            txtContraseña.UseWaitCursor = true;
+            txtPIN.Location = new Point(215, 115);
+            txtPIN.Name = "txtPIN";
+            txtPIN.Size = new Size(325, 31);
+            txtPIN.TabIndex = 4;
+            txtPIN.UseWaitCursor = true;
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(184, 58);
+            txtUsuario.Location = new Point(215, 60);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(325, 31);
             txtUsuario.TabIndex = 3;
             txtUsuario.UseWaitCursor = true;
             // 
-            // lblContraseña
+            // lblPIN
             // 
-            lblContraseña.AutoSize = true;
-            lblContraseña.Location = new Point(30, 121);
-            lblContraseña.Name = "lblContraseña";
-            lblContraseña.Size = new Size(113, 23);
-            lblContraseña.TabIndex = 2;
-            lblContraseña.Text = "Contraseña";
-            lblContraseña.UseWaitCursor = true;
+            lblPIN.AutoSize = true;
+            lblPIN.Location = new Point(61, 123);
+            lblPIN.Name = "lblPIN";
+            lblPIN.Size = new Size(38, 23);
+            lblPIN.TabIndex = 2;
+            lblPIN.Text = "PIN";
+            lblPIN.UseWaitCursor = true;
             // 
             // lblUsuario
             // 
             lblUsuario.AutoSize = true;
-            lblUsuario.Location = new Point(30, 66);
+            lblUsuario.Location = new Point(61, 68);
             lblUsuario.Name = "lblUsuario";
             lblUsuario.Size = new Size(78, 23);
             lblUsuario.TabIndex = 1;
@@ -98,7 +111,7 @@
             btnVerificacion.FlatStyle = FlatStyle.Popup;
             btnVerificacion.Font = new Font("Impact", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnVerificacion.ForeColor = SystemColors.ActiveCaptionText;
-            btnVerificacion.Location = new Point(207, 194);
+            btnVerificacion.Location = new Point(239, 211);
             btnVerificacion.Name = "btnVerificacion";
             btnVerificacion.Size = new Size(156, 66);
             btnVerificacion.TabIndex = 0;
@@ -107,18 +120,34 @@
             btnVerificacion.UseWaitCursor = true;
             btnVerificacion.Click += btnVerificacion_Click;
             // 
+            // btnCerrar
+            // 
+            btnCerrar.BackColor = SystemColors.ButtonFace;
+            btnCerrar.BackgroundImage = Properties.Resources.btnVolver;
+            btnCerrar.BackgroundImageLayout = ImageLayout.Zoom;
+            btnCerrar.FlatStyle = FlatStyle.Popup;
+            btnCerrar.Location = new Point(12, 12);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(81, 78);
+            btnCerrar.TabIndex = 11;
+            btnCerrar.UseVisualStyleBackColor = false;
+            btnCerrar.Click += btnCerrar_Click;
+            // 
             // FrmValidacionAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.ManejoClientesfondo;
+            BackgroundImage = Properties.Resources.ImgAdministracion;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1195, 665);
+            ClientSize = new Size(1258, 752);
+            Controls.Add(btnCerrar);
+            Controls.Add(btnVolver);
             Controls.Add(grpValidacion);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmValidacionAdmin";
             Text = "FrmValidacionAdmin";
-            UseWaitCursor = true;
+            WindowState = FormWindowState.Maximized;
+            Load += FrmValidacionAdmin_Load;
             grpValidacion.ResumeLayout(false);
             grpValidacion.PerformLayout();
             ResumeLayout(false);
@@ -126,11 +155,13 @@
 
         #endregion
 
+        private Button btnVolver;
         private GroupBox grpValidacion;
-        private TextBox txtContraseña;
+        private TextBox txtPIN;
         private TextBox txtUsuario;
-        private Label lblContraseña;
+        private Label lblPIN;
         private Label lblUsuario;
         private Button btnVerificacion;
+        private Button btnCerrar;
     }
 }

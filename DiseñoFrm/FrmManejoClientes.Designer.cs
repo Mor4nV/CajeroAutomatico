@@ -50,6 +50,7 @@
             btnAgregar = new Button();
             btnBuscar = new Button();
             dgvListadoClientes = new DataGridView();
+            btnVolver = new Button();
             grpMantenimiento.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -58,6 +59,7 @@
             // 
             // grpMantenimiento
             // 
+            grpMantenimiento.Anchor = AnchorStyles.None;
             grpMantenimiento.BackgroundImage = Properties.Resources.Fondo2;
             grpMantenimiento.BackgroundImageLayout = ImageLayout.Stretch;
             grpMantenimiento.Controls.Add(groupBox2);
@@ -190,6 +192,7 @@
             // 
             // groupBox3
             // 
+            groupBox3.Anchor = AnchorStyles.None;
             groupBox3.BackgroundImage = Properties.Resources.Fondo2;
             groupBox3.Controls.Add(btnActualizar);
             groupBox3.Controls.Add(btnMostrarClientes);
@@ -289,25 +292,40 @@
             // 
             // dgvListadoClientes
             // 
+            dgvListadoClientes.Anchor = AnchorStyles.None;
             dgvListadoClientes.BackgroundColor = SystemColors.ActiveCaption;
             dgvListadoClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvListadoClientes.Location = new Point(810, 305);
+            dgvListadoClientes.Location = new Point(809, 253);
             dgvListadoClientes.Name = "dgvListadoClientes";
-            dgvListadoClientes.Size = new Size(441, 528);
+            dgvListadoClientes.Size = new Size(578, 580);
             dgvListadoClientes.TabIndex = 6;
+            // 
+            // btnVolver
+            // 
+            btnVolver.BackgroundImage = Properties.Resources.btnVolver;
+            btnVolver.BackgroundImageLayout = ImageLayout.Stretch;
+            btnVolver.Location = new Point(12, 3);
+            btnVolver.Name = "btnVolver";
+            btnVolver.Size = new Size(81, 78);
+            btnVolver.TabIndex = 7;
+            btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click;
             // 
             // FrmManejoClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.ManejoClientesfondo2;
+            BackgroundImage = Properties.Resources.ManejoClientesfondo;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1263, 836);
+            Controls.Add(btnVolver);
             Controls.Add(dgvListadoClientes);
             Controls.Add(groupBox3);
             Controls.Add(grpMantenimiento);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmManejoClientes";
             Text = "FormManejoClientes";
+            WindowState = FormWindowState.Maximized;
             Load += FrmManejoClientes_Load;
             grpMantenimiento.ResumeLayout(false);
             grpMantenimiento.PerformLayout();
@@ -342,5 +360,6 @@
         private Button btnMostrarInactivos;
         private Button btnMostrarClientes;
         private Button btnActualizar;
+        private Button btnVolver;
     }
 }

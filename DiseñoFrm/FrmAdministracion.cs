@@ -28,20 +28,30 @@ namespace CajeroAutomatico
 
         }
 
-        private void btnListadoClientes_Click(object sender, EventArgs e)
+        private void btnCreacionUsuarios_Click(object sender, EventArgs e)
         {
-           FrmRecargarEfectivo frmRecargarEfectivo = new FrmRecargarEfectivo();
-            frmRecargarEfectivo.Show();
+            FrmCreacionUsuarios formCreacionUsuarios = new FrmCreacionUsuarios();
+            formCreacionUsuarios.Show();
             this.Hide();
 
         }
 
-        private void btnGenerarReporte_Click(object sender, EventArgs e)
+        private void btnGestionCuentas_Click(object sender, EventArgs e)
         {
-            FrmGenerarReporte formGenerarReporte = new FrmGenerarReporte();
-
-            formGenerarReporte.Show();
+            FrmGestionCuentasBancarias formGestionCuentas = new FrmGestionCuentasBancarias();
+            formGestionCuentas.Show();
             this.Hide();
+
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("¿Estás seguro de que deseas cerrar la sesión?",
+                "Confirmar cierre de sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

@@ -30,11 +30,12 @@
         {
             btnAdministracion = new Button();
             button1 = new Button();
+            btnCerrar = new Button();
             SuspendLayout();
             // 
             // btnAdministracion
             // 
-            btnAdministracion.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            btnAdministracion.Anchor = AnchorStyles.None;
             btnAdministracion.BackColor = SystemColors.ActiveCaption;
             btnAdministracion.BackgroundImage = Properties.Resources.Administracionbtn;
             btnAdministracion.BackgroundImageLayout = ImageLayout.Stretch;
@@ -49,7 +50,7 @@
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            button1.Anchor = AnchorStyles.None;
             button1.BackColor = SystemColors.ActiveCaption;
             button1.BackgroundImage = Properties.Resources.Operacionesbtn;
             button1.BackgroundImageLayout = ImageLayout.Stretch;
@@ -62,6 +63,19 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // btnCerrar
+            // 
+            btnCerrar.BackColor = SystemColors.ActiveCaptionText;
+            btnCerrar.BackgroundImage = Properties.Resources.btnCerrar;
+            btnCerrar.BackgroundImageLayout = ImageLayout.Stretch;
+            btnCerrar.FlatStyle = FlatStyle.Popup;
+            btnCerrar.Location = new Point(12, 12);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(81, 78);
+            btnCerrar.TabIndex = 9;
+            btnCerrar.UseVisualStyleBackColor = false;
+            btnCerrar.Click += btnCerrar_Click;
+            // 
             // FrmInicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -69,11 +83,14 @@
             BackgroundImage = Properties.Resources.ImagenInicio;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1126, 622);
+            Controls.Add(btnCerrar);
             Controls.Add(button1);
             Controls.Add(btnAdministracion);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmInicio";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "FrmInicio";
+            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
         }
 
@@ -81,5 +98,6 @@
 
         private Button btnAdministracion;
         private Button button1;
+        private Button btnCerrar;
     }
 }

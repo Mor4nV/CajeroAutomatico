@@ -25,5 +25,15 @@ namespace CajeroAutomatico
             PIN.Show();
             this.Hide();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("¿Estás seguro de que deseas cerrar la sesión?",
+                "Confirmar cierre de sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

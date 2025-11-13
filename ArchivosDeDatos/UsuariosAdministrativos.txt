@@ -1,0 +1,3 @@
+ADM000001|Erick Moran|emoran|erick.moran@caop.com|555-123-456|CAOP00001|395438
+ADM000002|Oscar Medardo|omedardo|oscar.medardo@caop.com|555-654-321|CAOP00002|234567
+ADM000003|Libni Lopez|llopez|libni.lopez@caop.com|555-987-654|CAOP00003|345678
